@@ -29,9 +29,9 @@ with col1:
     screen_time = st.slider("📱 Screen Time Per Day", 0.0, 12.0, 4.0)
 with col2:
     mental_health = st.slider("🧠 Mental Health (1 - Poor, 10 - Excellent)", 1, 10, 5)
-    internet_quality = st.selectbox("🌐 Internet Quality", ["Low", "Fair", "Good"])
-    diet_quality = st.selectbox("🥗 Diet Quality", ["Bad", "Average", "Good"])
-    part_time_job = st.radio("💼 Part-time Job", ["Yes", "No"])
+    internet_quality = st.selectbox("🌐 Internet Quality", ["low", "fair", "good"])
+    diet_quality = st.selectbox("🥗 Diet Quality", ["bad", "average", "good"])
+    part_time_job = st.radio("💼 Part-time Job", ["yes", "no"])
 
 
 ptj_encoded = 1 if part_time_job == "Yes" else 0
